@@ -14,7 +14,9 @@ npm run dev
 
 - Open pages/index.js with your text editor.
 
+  ```bash
   Find the text that says “Welcome to” under the <h1> tag and change it to “Learn”.
+  ```
 
 ## Add Pages
 
@@ -148,24 +150,25 @@ return (
 
 - Create a file called components/layout.module.css with the following content:
 
-    >components/layout.module.css
+  > components/layout.module.css
 
-    ```bash
-    .container {
-    max-width: 36rem;
-    padding: 0 1rem;
-    margin: 3rem auto 6rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    }
-    ```
+  ```bash
+  .container {
+  max-width: 36rem;
+  padding: 0 1rem;
+  margin: 3rem auto 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+  ```
 
-    create a file components/Layout.js
-    ```bash
-    import styles from './layout.module.css';
+  create a file components/Layout.js
 
-    export default function Layout({ children }) {
-    return <div className={styles.container}>{children}</div>;
-    }
-    ```
+  ```bash
+  import styles from './layout.module.css';
+
+  export default function Layout({ children }) {
+  return <div className={styles.container}>{children}</div>;
+  }
+  ```
