@@ -43,3 +43,36 @@ Links are the same as html <a> tags
   ```bash
   import Link from 'next/link';
   ```
+
+  Then find the h1 tag that looks like this:
+
+  ```bash
+  <h1 className="title">
+      Welcome to <a href="https://nextjs.org">Next.js!</a>
+  </h1>
+  ```
+
+  And change it to:
+
+  ```bash
+  <h1 className="title">
+      Read <Link href="/posts/first-post">this page!</Link>
+  </h1>
+  ```
+
+  Next, open pages/posts/first-post.js and replace its content with the following:
+
+  ```bash
+  import Link from 'next/link';
+
+  export default function FirstPost() {
+  return (
+      <>
+      <h1>First Post</h1>
+      <h2>
+          <Link href="/">Back to home</Link>
+      </h2>
+      </>
+  );
+  }
+  ```
