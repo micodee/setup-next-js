@@ -14,9 +14,9 @@ npm run dev
 
 - Open pages/index.js with your text editor.
 
-  ```bash
-  Find the text that says “Welcome to” under the <h1> tag and change it to “Learn”.
-  ```
+```bash
+Find the text that says “Welcome to” under the <h1> tag and change it to “Learn”.
+```
 
 ## Add Pages
 
